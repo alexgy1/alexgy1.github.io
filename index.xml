@@ -8,6 +8,22 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Jan 2021 14:33:00 +0800</lastBuildDate><atom:link href="https://alexgy1.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>hugo quick start to build your website and deploy to github in ten minutes</title>
+      <link>https://alexgy1.github.io/posts/build-blog-use-hugo/</link>
+      <pubDate>Fri, 29 Jan 2021 14:33:00 +0800</pubDate>
+      
+      <guid>https://alexgy1.github.io/posts/build-blog-use-hugo/</guid>
+      <description>Precondition
+  mac pro brew git  1: Install Hogo brew install hugo
+To verify your new install:
+hugo version
+2: Create a new site hugo new site quickstart quickstart 就是自己起的目录名
+3: Add a Theme cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke Then, add the theme to the site configuration:
+echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
+4: Add Some Content hugo new posts/my-first-post.md 5: Start the Hugo server in your localhost then you can see the effect hugo server -D</description>
+    </item>
+    
+    <item>
       <title>My First Post</title>
       <link>https://alexgy1.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 29 Jan 2021 14:33:00 +0800</pubDate>
