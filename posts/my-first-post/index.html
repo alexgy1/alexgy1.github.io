@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My First Post | alex&#39;s Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="如何阅读开源项目？ 为什么要阅读源码？  更好的解决具体的问题 。带着问题学习源码
+  本地安装 git GitHub 找到要看的项目的地址 Clone 到本地 查看 remade.md 看这个项目解决了什么问题 整体上熟悉目录结构 再看具体主流程 要带着问题看 不然容易迷失   如果是具体的前端项目如何阅读？
+ 上面前 6 步不变
+是否 🈶️package.json 文件 - 查看里面的 main 字段 对应的就是入口。 我为什么知道？ 这就要熟悉 nodejs 的 package.json 的目录结构以及每个字段代表什么意思，具体可以 google &#43; 关键词 后续、去了解， 比如 nodejs package.json main , 众多结果中 找最靠前的那个 发现是 npm docs 里面有描述 ，打开页面， 是一个看找到还是快速搜索？ 当然是 快速搜索， 这些提高效率的小举动，为你节省生命， 可以尝试一下，mac 下 浏览器打开的页面中  Command &#43; f 输入 main 就可以快速定位要找的知识点。">
+    <meta name="generator" content="Hugo 0.78.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+
+  
+  
+    <link rel="stylesheet" href="/ananke/dist/main.css_5c99d70a7725bacd4c701e995b969fea.css" >
+  
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="My First Post" />
+<meta property="og:description" content="如何阅读开源项目？ 为什么要阅读源码？  更好的解决具体的问题 。带着问题学习源码
+  本地安装 git GitHub 找到要看的项目的地址 Clone 到本地 查看 remade.md 看这个项目解决了什么问题 整体上熟悉目录结构 再看具体主流程 要带着问题看 不然容易迷失   如果是具体的前端项目如何阅读？
+ 上面前 6 步不变
+是否 🈶️package.json 文件 - 查看里面的 main 字段 对应的就是入口。 我为什么知道？ 这就要熟悉 nodejs 的 package.json 的目录结构以及每个字段代表什么意思，具体可以 google &#43; 关键词 后续、去了解， 比如 nodejs package.json main , 众多结果中 找最靠前的那个 发现是 npm docs 里面有描述 ，打开页面， 是一个看找到还是快速搜索？ 当然是 快速搜索， 这些提高效率的小举动，为你节省生命， 可以尝试一下，mac 下 浏览器打开的页面中  Command &#43; f 输入 main 就可以快速定位要找的知识点。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://alexgy1.github.io/posts/my-first-post/" />
+<meta property="article:published_time" content="2021-01-29T14:33:00+08:00" />
+<meta property="article:modified_time" content="2021-01-29T14:33:00+08:00" />
+<meta itemprop="name" content="My First Post">
+<meta itemprop="description" content="如何阅读开源项目？ 为什么要阅读源码？  更好的解决具体的问题 。带着问题学习源码
+  本地安装 git GitHub 找到要看的项目的地址 Clone 到本地 查看 remade.md 看这个项目解决了什么问题 整体上熟悉目录结构 再看具体主流程 要带着问题看 不然容易迷失   如果是具体的前端项目如何阅读？
+ 上面前 6 步不变
+是否 🈶️package.json 文件 - 查看里面的 main 字段 对应的就是入口。 我为什么知道？ 这就要熟悉 nodejs 的 package.json 的目录结构以及每个字段代表什么意思，具体可以 google &#43; 关键词 后续、去了解， 比如 nodejs package.json main , 众多结果中 找最靠前的那个 发现是 npm docs 里面有描述 ，打开页面， 是一个看找到还是快速搜索？ 当然是 快速搜索， 这些提高效率的小举动，为你节省生命， 可以尝试一下，mac 下 浏览器打开的页面中  Command &#43; f 输入 main 就可以快速定位要找的知识点。">
+<meta itemprop="datePublished" content="2021-01-29T14:33:00+08:00" />
+<meta itemprop="dateModified" content="2021-01-29T14:33:00+08:00" />
+<meta itemprop="wordCount" content="267">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="My First Post"/>
+<meta name="twitter:description" content="如何阅读开源项目？ 为什么要阅读源码？  更好的解决具体的问题 。带着问题学习源码
+  本地安装 git GitHub 找到要看的项目的地址 Clone 到本地 查看 remade.md 看这个项目解决了什么问题 整体上熟悉目录结构 再看具体主流程 要带着问题看 不然容易迷失   如果是具体的前端项目如何阅读？
+ 上面前 6 步不变
+是否 🈶️package.json 文件 - 查看里面的 main 字段 对应的就是入口。 我为什么知道？ 这就要熟悉 nodejs 的 package.json 的目录结构以及每个字段代表什么意思，具体可以 google &#43; 关键词 后续、去了解， 比如 nodejs package.json main , 众多结果中 找最靠前的那个 发现是 npm docs 里面有描述 ，打开页面， 是一个看找到还是快速搜索？ 当然是 快速搜索， 这些提高效率的小举动，为你节省生命， 可以尝试一下，mac 下 浏览器打开的页面中  Command &#43; f 输入 main 就可以快速定位要找的知识点。"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        alex&#39;s Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://alexgy1.github.io/posts/my-first-post/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://alexgy1.github.io/posts/my-first-post/&amp;text=My%20First%20Post" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://alexgy1.github.io/posts/my-first-post/&amp;title=My%20First%20Post" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">My First Post</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              前端关宇
+          
+          </strong>
+      </p>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-01-29T14:33:00+08:00">January 29, 2021</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="如何阅读开源项目">如何阅读开源项目？</h2>
+<h3 id="为什么要阅读源码">为什么要阅读源码？</h3>
+<blockquote>
+<p>更好的解决具体的问题 。带着问题学习源码</p>
+</blockquote>
+<ol>
+<li>本地安装 git</li>
+<li>GitHub 找到要看的项目的地址</li>
+<li>Clone 到本地</li>
+<li>查看 remade.md 看这个项目解决了什么问题</li>
+<li>整体上熟悉目录结构</li>
+<li>再看具体主流程 要带着问题看 不然容易迷失</li>
+</ol>
+<blockquote>
+<p>如果是具体的前端项目如何阅读？</p>
+</blockquote>
+<p>上面前 6 步不变</p>
+<ol start="7">
+<li>是否 🈶️package.json 文件 - 查看里面的 main 字段 对应的就是入口。 我为什么知道？ 这就要熟悉 nodejs 的 package.json 的目录结构以及每个字段代表什么意思，具体可以 google + 关键词 后续、去了解， 比如 nodejs package.json main , 众多结果中 找最靠前的那个 发现是 npm docs 里面有描述 ，打开页面， 是一个看找到还是快速搜索？ 当然是 快速搜索， 这些提高效率的小举动，为你节省生命， 可以尝试一下，mac 下 浏览器打开的页面中</li>
+</ol>
+<p>Command + f 输入 main 就可以快速定位要找的知识点。</p>
+<ol start="8">
+<li>
+<p>找到入口文件以后
+就可以逐个看下去了 好的项目源码 命名规范 可以让你了解到很多信息， 方便阅读
+如果对某一块代码不了解，可以先跳过，后面再回头看看， 不行再去找其他人对于这块的解答。
+如果不了解某一个模块的作用的时候， 测试用例就很有帮助了，测试用例里面包含对输入和输出的校验， 可以从那里了解到这个模块的大致作用， 再回头去看这个模块的源码就会好一些。</p>
+</li>
+<li>
+<p>但是不是所有的前端项目都有 package.json 文件 这时候,</p>
+<p>你就要分析这个项目的性质了是 monorepo？</p>
+<p>是 ui 库 ？</p>
+<p>还是 cli 工具库？</p>
+<ul>
+<li>如果是 cli 工具库 有些入口是在<code>/bin</code> 目录下 一般来说 <code>/lib</code> <code>/src</code>下就是该工具库的核心代码</li>
+<li>如果是 ui 库 可以去 github 了解一下 vue react 或者 angulr 还是其他 ui 库的项目目录。</li>
+</ul>
+</li>
+<li>
+<p>再结合【断点调试】查看函数调用栈 找到关键流程 ，具体在哪里打断点 就要平时多了解多看多练习了，
+初读源码可以从小的项目入手，或者小的项目的某个功能或者函数入手，如果实现具体的函数 如何讲函数组合实现某一个功能， 可以从代码实现考虑到最后效果， 也可以直接看最后效果，再反推如果是自己该如何实现，为什么这么封装。一个来回会理解的更加透彻</p>
+</li>
+<li>
+<p>再结合 全局搜索 快速找到自己想看的部分 或者方法名等等</p>
+</li>
+<li>
+<p>再关注核心开发者 学习他们的 blog 或者视频</p>
+<ul>
+<li><strong>Behind the Scenes: Improving the Repository Infrastructure</strong> 这篇介绍的是 React 项目仓库的基础设施。</li>
+<li>Sneak Peek: Beyond React 16</li>
+<li>Andrew Clark 一开始就写了一篇介绍 fiber 架构的文档。</li>
+<li>Dan Abramov 在 JSConf 上对 React 未来的一些新特性的介绍 -Beyond React 16。</li>
+<li>React 博客中的 Sneak Peek: Beyond React 16 也是对这次 Talk 的介绍。</li>
+<li>Evan You 介绍前端框架数据变化侦测原理的 Talk。Vue 文档中也有 Reactivity in Depth 这样的介绍原理的章节。</li>
+<li>Sean Larkin 的 Everything is a plugin! Mastering webpack from the inside out 介绍了 Webpack 的核心组件 Tapable。</li>
+<li>James Kyle 的 How to Build a Compiler 可以让我们了解 Babel 转译代码的基本流程。
+例如 <a href="https://khalilstemmler.com/blogs/thoughts/building-a-compiler/">how to build a complier</a></li>
+</ul>
+</li>
+<li>
+<p>最后学好英语，不是中文不好， 有些技术或者框架是国外先发明的，用中文理解也可以，但是多少会有偏差和信息差。</p>
+</li>
+</ol>
+<blockquote>
+<p>总结如下:
+宏观微观并行
+宏观学习作者如何设计和架构，学习作者优秀的思想。
+微观学习如何具体实现，如何调试便于自己理解对应的问题，对于同一个问题，作者是如何解决的， 考虑的是否全面，等等提升。</p>
+</blockquote>
+<p>读源码的意义是了解如何实现。 如何更好的实现， 自己能不能实现。能不能实现好， 来解决我们遇到的具体问题。刻意练习才会有进步。</p>
+<h2 id="一个技术大牛应该有的特点">一个技术大牛应该有的特点</h2>
+<ul>
+<li>
+<p>技术控</p>
+</li>
+<li>
+<p>全局观</p>
+</li>
+<li>
+<p>慎行</p>
+<ul>
+<li>设计方案时候 是否考虑过多个方案</li>
+<li>编写代码的时候 代码符合规范 使用设计模式优化 重构</li>
+<li>测试的时候 测试用例考虑的是否全面</li>
+</ul>
+</li>
+<li>
+<p>提交代码的时候 code review</p>
+</li>
+<li>
+<p>沟通 很重要</p>
+</li>
+<li>
+<p>架构能力</p>
+<ul>
+<li>设计模式的运用。</li>
+<li>阅读大量书籍</li>
+<li>在企业中不断参与项目实践 积累经验</li>
+</ul>
+</li>
+<li>
+<p>刨根问底。背后的原因是什么 不要解决问题就完事了 多想想为什么有这个问题</p>
+</li>
+<li>
+<p>代码整洁之道</p>
+</li>
+<li>
+<p>用户为本 用户第一</p>
+</li>
+<li>
+<p>执行力。快 狠 准。站在对方角度考虑问题，解决问题的时候会更有动力。设置提醒 不要忘记， 安排好要做的事情， 一件一件去完成，比乱序同时处理多个事好太多。</p>
+</li>
+<li>
+<p>懒 重复的事情交给机器去做，关键你能不能想到这么做，剩下就是实现</p>
+</li>
+<li>
+<p>画图能力 系统架构图 部署图 UML 类图 时序图</p>
+</li>
+<li>
+<p>引路人 格局 以及开源精神的体现</p>
+</li>
+<li>
+<p>爱生活 生活是最本质的东西，一切都围绕着生活</p>
+</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://alexgy1.github.io" >
+    &copy;  alex's Site 2021 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

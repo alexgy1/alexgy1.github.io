@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on alex&#39;s Site</title>
+    <link>https://alexgy1.github.io/posts/</link>
+    <description>Recent content in Posts on alex&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jan 2021 14:33:00 +0800</lastBuildDate><atom:link href="https://alexgy1.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://alexgy1.github.io/posts/my-first-post/</link>
+      <pubDate>Fri, 29 Jan 2021 14:33:00 +0800</pubDate>
+      
+      <guid>https://alexgy1.github.io/posts/my-first-post/</guid>
+      <description>如何阅读开源项目？ 为什么要阅读源码？  更好的解决具体的问题 。带着问题学习源码
+  本地安装 git GitHub 找到要看的项目的地址 Clone 到本地 查看 remade.md 看这个项目解决了什么问题 整体上熟悉目录结构 再看具体主流程 要带着问题看 不然容易迷失   如果是具体的前端项目如何阅读？
+ 上面前 6 步不变
+是否 🈶️package.json 文件 - 查看里面的 main 字段 对应的就是入口。 我为什么知道？ 这就要熟悉 nodejs 的 package.json 的目录结构以及每个字段代表什么意思，具体可以 google + 关键词 后续、去了解， 比如 nodejs package.json main , 众多结果中 找最靠前的那个 发现是 npm docs 里面有描述 ，打开页面， 是一个看找到还是快速搜索？ 当然是 快速搜索， 这些提高效率的小举动，为你节省生命， 可以尝试一下，mac 下 浏览器打开的页面中  Command + f 输入 main 就可以快速定位要找的知识点。</description>
+    </item>
+    
+  </channel>
+</rss>
